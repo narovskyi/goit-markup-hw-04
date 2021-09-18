@@ -75,6 +75,33 @@ img {
   color: var(--secondary-title-color);
 }
 
+.social-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-link {
+  display: block;
+  padding: 12px;
+  color: #afb1b8;
+}
+
+.social-links-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.social-links-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  color: #ffffff;
+}
+
 /* ----------HEADER---------- */
 
 .header {
@@ -140,9 +167,26 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.icon-envelope {
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  display: block;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .header-contacts-link:hover,
@@ -154,6 +198,15 @@ img {
 
 .hero {
   background-color: var(--main-background-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero > .container {
@@ -225,6 +278,26 @@ img {
 
 .about-us-slogans-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.about-us-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.about-us-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
 }
 
 .about-us-slogans-text {
@@ -302,6 +375,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  margin-bottom: 16px;
 }
 
 /* ----------FOOTER---------- */
